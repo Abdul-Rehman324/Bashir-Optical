@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS File link -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- CSS Bootstrap File link -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <!-- Favicon link -->
+    <link rel="icon" type="image/png" href="./assets/images/Fav-icon/fav-icon.png">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!-- AOS Animation Library -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+
+    <!-- Project Title -->
+    <title>Book an Appointment</title>
+</head>
+
+<body>
+
+    <!-- Navbar Section -->
+    <section class="navbar-section py-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="navbar navbar-expand-lg ">
+                        <!-- Nav Logo -->
+                        <a class="navbar-brand fs-2" href="index.html">
+                            Bashir Optical
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <!-- Navigation -->
+                        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                            <ul class="navbar-nav ms-auto fw-bold">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Services
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a class="dropdown-item" href="index.html#services">Eye Checkup</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="index.html#services">Eye Glasses</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="index.html#services">Sun Glasses</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="index.html#services">Contact Lenses</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="index.html#services">Frame Repairs</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="index.html#services">Kid'S Eyewear</a>
+                                        </li>
+                                    </ul>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="about.html">About Us</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="feedback.html">Feedback</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contact.html">Contact Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Section End========================================================================================== -->
+
+    <!-- Booking Section -->
+    <section class="booking-section py-5" style="color: black;">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="header text-center mb-5">
+                        <h1 class="fw-bold">Optometrist <span style="color: #08366e;">Appointment Booking</span></h1>
+                        <p>Schedule your eye examination with our specialist</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="form-container p-5">
+                        <form id="optometristForm">
+                            <div class="container">
+                                <!-- Patient Information -->
+                                <div class="row">
+                                    <div class="col-12">
+                                        <section>
+                                            <h2 class="section-title text-white fw-bold text-center mb-3">Patient
+                                                Information</h2>
+                                            <div class="row g-3">
+                                                <div class="col-12">
+                                                    <label for="patientName" class="form-label text-white">
+                                                        Patient Name
+                                                    </label>
+                                                    <input type="text" class="form-control" id="patientName"
+                                                        placeholder="Enter patient's full name" required>
+                                                    <div class="invalid-feedback text-white">
+                                                        Please enter your full name.
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-6">
+                                                    <label for="gender" class="form-label text-white">Gender</label>
+                                                    <select class="form-select" id="gender" required>
+                                                        <option value="" selected disabled>Select gender</option>
+                                                        <option value="male">Male</option>
+                                                        <option value="female">Female</option>
+                                                        <option value="other">Other</option>
+                                                    </select>
+                                                    <div class="invalid-feedback text-white">Please select your gender.
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-6">
+                                                    <label for="age" class="form-label text-white">Age</label>
+                                                    <input type="number" class="form-control" id="age"
+                                                        placeholder="Enter age" min="1" max="120" required>
+                                                    <div class="invalid-feedback text-white">Please enter a valid age
+                                                        (1-120).</div>
+                                                </div>
+
+                                                <div class="col-md-6">
+                                                    <label for="phone" class="form-label text-white">Phone
+                                                        Number</label>
+                                                    <input type="tel" class="form-control" id="phone"
+                                                        placeholder="Enter phone number" required>
+                                                    <div class="invalid-feedback text-white">Please enter a valid phone
+                                                        number.</div>
+                                                </div>
+
+                                                <div class="col-md-6">
+                                                    <label for="email" class="form-label text-white">Email</label>
+                                                    <input type="email" class="form-control" id="email"
+                                                        placeholder="Enter email address" required>
+                                                    <div class="invalid-feedback text-white">Please enter a valid email
+                                                        address.</div>
+                                                </div>
+                                            </div>
+                                        </section>
+                                    </div>
+                                </div>
+
+                                <!-- Payment Information -->
+                                <div class="row mt-5">
+                                    <div class="col-md-12 text-center text-light">
+                                        <h4 class="section-title fw-bold mb-2">Consultation Fee</h4>
+                                        <p><b>Rs: 400</b>
+                                            &nbsp;Pay on visit at our shop
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="text-center mt-4">
+                                            <button type="submit" class="btn btn-outline-light fw-bold btn-lg">Book
+                                                Appointment</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End=============================================================================================== -->
+
+    <!-- Footer Section-->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="footer-main-content">
+                        <h2 class="mb-4 fs-3" style="font-family: impact;">BASHIR OPTICAL</h2>
+                        <p>Providing expert eye care with high-quality eyeglasses, precision optics, advanced eye
+                            checkups,
+                            and professional frame repairs. Your vision deserves the best!
+                        </p>
+                    </div>
+                    <div class="mt-4">
+                        <a href="https://www.facebook.com/bashiroptical/" target="_blank" class="social-icon"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/bashiroptical?igsh=MXBiZGNoOXVqaGZ2Mg=="
+                            class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.tiktok.com/@bashiroptical?_t=ZS-8uktWPeDazv&_r=1" class="social-icon"><i
+                                class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <h4 class="mb-4 fw-bold">Quick Links</h4>
+                    <a href="#home" class="footer-link">Home</a>
+                    <a href="#services" class="footer-link">Services</a>
+                    <a href="about.html" class="footer-link">About Us</a>
+                    <a href="feedback.html" class="footer-link">Feedback</a>
+                    <a href="contact.html" class="footer-link">Contact Us</a>
+                </div>
+                <div class="col-md-2">
+                    <h4 class="mb-4 fw-bold">Services</h4>
+                    <a href="#services" class="footer-link">Eye Checkup</a>
+                    <a href="#services" class="footer-link">Eyeglasses</a>
+                    <a href="#services" class="footer-link">Sunglasses</a>
+                    <a href="#services" class="footer-link">Contact Lenses</a>
+                    <a href="#services" class="footer-link">Frame Repairs</a>
+                    <a href="#services" class="footer-link">Kids Eyewear</a>
+                </div>
+                <div class="col-md-4">
+                    <h4 class="mb-4 fw-bold">Contact Info</h4>
+                    <p><i class="fas fa-map-marker-alt me-2"></i> Highway Road, near Faizul Aloom Madrasa, Faqir Wali,
+                        Pakistan
+                    </p>
+                    <p><i class="fas fa-phone-alt me-2"></i> 0300-3929219</p>
+                    <p><i class="fas fa-envelope me-2"></i> bashiroptical072@gmail.com</p>
+                    <p><i class="fas fa-clock me-2"></i> Mon - Sun: 9:00 AM - 8:00 PM</p>
+                    <p><i class="fas fa-clock me-2"></i> Friday: 9:00 AM - 12:00 PM</p>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="mb-0 text-center">&copy; 2025 Bashir Optical. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End============================================================================= -->
+     
+    <!-- Js File link -->
+    <script src="./assets/js/script.js"></script>
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animation Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        document.getElementById("optometristForm").onsubmit = function (event) {
+            event.preventDefault();
+
+            // Get form values
+            var name = document.getElementById("patientName").value;
+            var gender = document.getElementById("gender").value;
+            var age = document.getElementById("age").value;
+            var phone = document.getElementById("phone").value;
+            var email = document.getElementById("email").value;
+
+            // Simple validation check
+            if (name && gender && age && phone && email) {
+                alert("Appointment booked successfully! We will contact you shortly.");
+                document.getElementById("optometristForm").reset();
+            } else {
+                alert("Please fill all required fields.");
+            }
+        };
+    </script>
+</body>
+
+</html>

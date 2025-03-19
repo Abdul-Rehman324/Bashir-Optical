@@ -1,0 +1,458 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+/* Navbar Section CSS */
+.navbar-section {
+    text-shadow: 3px 3px 5px black !important;
+    background-color: #04172c;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.navbar-brand {
+    font-family: Impact !important;
+    color: #FFFFFF !important;
+    transition: all 0.3s ease !important;
+}
+
+.navbar-brand:hover {
+    transform: scale(1.05) !important;
+}
+
+/* Navbar Toggler CSS */
+.navbar-toggler {
+    background-color: #dbdada !important;
+}
+
+.nav-link {
+    color: #FFFFFF !important;
+    margin: 0 3px;
+    transition: all 0.3s ease !important;
+}
+
+.nav-link:hover {
+    color: #1d5ba1 !important;
+    transform: translateY(-2px);
+
+}
+
+/* Dropdown CSS */
+.dropdown-menu {
+    background-color: #05203e !important;
+}
+
+.dropdown-menu a {
+    color: #FFFFFF !important;
+    text-shadow: 3px 3px 5px black !important;
+}
+
+.dropdown-menu a:hover {
+    background-color: #013065 !important;
+}
+
+.nav-item .dropdown-menu {
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+/* On hover smoothly dropdown open*/
+.nav-item.dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* End ----------------------------------------------------------------------------------------------------------- */
+
+/* Hero Section CSS */
+.hero-section {
+    position: relative;
+    min-height: 100vh;
+}
+
+.hero-content {
+    padding-top: 70px;
+    position: relative;
+    z-index: 1;
+}
+
+.hero-content h1 {
+    text-shadow: 3px 3px 5px black !important;
+}
+
+.hero-content p {
+    text-shadow: 3px 3px 5px black !important;
+}
+
+.hero-btn-1 {
+    background-color: #04172c !important;
+    transition: all 0.3s ease !important;
+    text-shadow: 3px 3px 5px black !important;
+}
+
+.hero-btn-1:hover {
+    text-shadow: 3px 3px 5px black !important;
+    background-color: #1d5ba1 !important;
+    transform: scale(1.02) !important;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5) !important;
+}
+
+.hero-btn-2:hover {
+    color: #04172c !important;
+}
+
+.hero-buttons .btn {
+    margin: 5px 5px;
+    padding: 12px 30px;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+@media (max-width: 1440px) {
+    .hero-section h1 {
+        font-size: 60px;
+    }
+}
+
+@media (max-width: 1366px) {
+    .hero-section h1 {
+        font-size: 45px;
+    }
+}
+
+@media (max-width: 425px) {
+    .hero-section h1 {
+        font-size: 30px;
+    }
+
+    .hero-section p {
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 375px) {
+    .hero-section h1 {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 320px) {
+    .hero-section h1 {
+        font-size: 20px;
+    }
+}
+
+/* End-------------------------------------------------------------------------------------------------------------- */
+
+/* Services Section CSS */
+.services-section {
+    color: black !important;
+    padding: 80px 0px;
+    background-color: rgb(243, 240, 240);
+}
+
+.service-card {
+    color: black !important;
+    transition: all 0.3s ease;
+    border: none;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.7);
+}
+
+.service-card h4 {
+    color: #08366e !important;
+}
+
+.service-details {
+    text-align: left;
+    padding-top: 15px;
+    border-top: 1px solid black;
+}
+
+.read-more-link {
+    margin-top: 15px;
+}
+
+.read-more-link a {
+    color: #08366e !important;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .services-text {
+        font-size: 12px;
+    }
+
+    .lens-text {
+        font-size: 13px;
+    }
+}
+
+/* Eye Checkup CSS */
+.eye-checkup-card {
+    box-shadow: 0px 0px 6px 0px black;
+}
+
+.back-btn {
+    border: 2px solid #04172c !important;
+}
+
+.back-btn:hover {
+    background-color: #04172c !important;
+    color: #FFFFFF !important;
+}
+
+/* Eyeglasses CSS */
+.eye-glasses-card {
+    box-shadow: 0px 0px 6px 0px black;
+}
+
+/* Sunglasses CSS */
+.sun-glasses-card {
+    box-shadow: 0px 0px 6px 0px black;
+}
+
+/* Contact lens CSS */
+.contact-lens-card {
+    box-shadow: 0px 0px 6px 0px black;
+}
+
+/* Frame Repairs CSS */
+.repairs-card {
+    box-shadow: 0px 0px 6px 0px black;
+}
+
+/* Kids Section CSS */
+.kids-card {
+    box-shadow: 0px 0px 6px 0px black;
+}
+
+/* End--------------------------------------------------------------------------------- */
+
+/* About Section CSS*/
+.timeline {
+    position: relative;
+    padding: 40px 0;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 3px;
+    background: #0e4c92;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.timeline-item {
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.timeline-content {
+    padding: 20px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+.timeline-date {
+    background: #0e4c92;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .story-heading {
+        margin-top: 30px;
+    }
+}
+
+/* End----------------------------------------------------------------------------------------- */
+
+/* Feedback Section CSS */
+
+.feedback-form input,
+.feedback-form textarea,
+.feedback-form select {
+    border-radius: 12px;
+    padding: 12px 15px;
+}
+
+.feedback-form ::placeholder {
+    font-style: italic;
+}
+
+.custom-alert {
+    display: none;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1050;
+}
+
+.testimonial-card {
+    transition: all 0.3s ease;
+    border: none;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4) !important;
+}
+
+.profile-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.star-rating {
+    color: #FFD700;
+    margin-bottom: 8px;
+}
+
+/* End------------------------------------------------------------------ */
+
+/* Contact Section */
+.contact-info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.contact-info h5 {
+    color: #FFFFFF !important;
+}
+
+.contact-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 24px;
+    margin-right: 14px;
+}
+
+.form-container {
+    background-color: #0d1c2e;
+    border-radius: 5px;
+}
+
+.form-control {
+    height: 60px;
+    border-radius: 20px !important;
+}
+
+.form-control::placeholder {
+    font-style: italic;
+}
+
+.message-area {
+    height: 100px;
+}
+
+#successAlert {
+    display: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+    .form-container {
+        padding: 15px;
+    }
+
+    .form-title {
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+    }
+}
+
+/*End---------------------------------------------------------------------------------------------------------- */
+
+/* Footer Section CSS*/
+footer {
+    text-shadow: 3px 3px 5px black !important;
+    background-color: #04172c;
+    color: white;
+    padding: 60px 0 30px;
+}
+
+.footer-main-content p {
+    width: 90%;
+}
+
+.footer-link {
+    color: #adb5bd;
+    display: block;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+}
+
+.footer-link:hover {
+    color: white;
+    text-decoration: none;
+    transform: translateX(5px);
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-right: 10px;
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    background-color: #08366e;
+    transform: translateY(-5px);
+}
+@media (max-width: 768px) {
+footer p {
+    font-size: 13px;
+}
+}
+@media (max-width: 425px) {
+    footer h4 {
+        margin-top: 20px;
+    }
+}
+
+/* End------------------------------------------------------ */
+
+/* Animation Styles */
+[data-aos] {
+    opacity: 0;
+    transform: translatey(20px);
+    transition: all 0.8s ease;
+}
+
+[data-aos].aos-animate {
+    opacity: 1;
+    transform: translateY(0);
+}
